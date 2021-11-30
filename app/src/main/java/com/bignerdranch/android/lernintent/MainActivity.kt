@@ -22,9 +22,10 @@ class MainActivity : AppCompatActivity() {
             //val resultActivityIntent: Intent = Intent(this, ResultActivity::class.java)
            // resultActivityIntent.putExtra(HELLO_KEY,null as String?)
             //startActivity(resultActivityIntent)
-            val phoneNumberUri = Uri.parse("tel:+79888888888")
-            val callIntent: Intent = Intent(Intent.ACTION_CALL, phoneNumberUri)
-            startActivity(callIntent)
+            val link = Uri.parse("https://google.com")
+            val openBrowserIntent: Intent = Intent(Intent.ACTION_VIEW, link)
+            val chooser = Intent.createChooser(openBrowserIntent,"Browser")
+            startActivity(chooser)
 
         }
     }

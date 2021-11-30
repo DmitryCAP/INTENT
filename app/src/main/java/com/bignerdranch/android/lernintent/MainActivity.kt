@@ -20,13 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         nextActivityButton.setOnClickListener{
             //val resultActivityIntent: Intent = Intent(this, ResultActivity::class.java)
-
            // resultActivityIntent.putExtra(HELLO_KEY,null as String?)
-
             //startActivity(resultActivityIntent)
-            val googleLink = Uri.parse("https://Google.com")
-            val openBrowserIntent: Intent = Intent(Intent.ACTION_VIEW, googleLink)
-            startActivity(openBrowserIntent)
+            val phoneNumberUri = Uri.parse("tel:+79888888888")
+            val callIntent: Intent = Intent(Intent.ACTION_CALL, phoneNumberUri)
+            startActivity(callIntent)
 
         }
     }

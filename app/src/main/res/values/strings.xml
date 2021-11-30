@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LernIntent</string>
+    <string name="next_activity">NEXT ACTIVITY</string>
+    <string name="hello">hello</string>
+</resources>
